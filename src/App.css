@@ -8,6 +8,10 @@
   font-family: serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 .container {
   padding: 90px 30px;
   height: 100vh;
