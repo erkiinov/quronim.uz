@@ -1,0 +1,49 @@
+.surahAll {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 60px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  .Link {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    padding: 5px 15px;
+    border-radius: 12px;
+    font-size: 22px;
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    i {
+      font-size: 18px;
+    }
+  }
+  .logo {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    img {
+      width: 100px;
+    }
+  }
+  .quran-title {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 42px;
+    span:first-child {
+      color: green;
+    }
+    span:last-child {
+      color: red;
+    }
+  }
+}

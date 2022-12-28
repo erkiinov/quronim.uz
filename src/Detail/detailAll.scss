@@ -1,0 +1,54 @@
+.DetailAll {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  .text-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    h1 {
+      font-size: 42px;
+    }
+    .uzz {
+      color: green;
+    }
+    .arr {
+      color: red;
+    }
+  }
+  #select {
+    top: 0;
+    right: 0;
+    position: absolute;
+    outline: none;
+    background-color: red;
+    width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: white;
+  }
+  .Link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    padding: 5px 15px;
+    border-radius: 12px;
+    font-size: 22px;
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    i {
+      font-size: 18px;
+    }
+  }
+}

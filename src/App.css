@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+.container {
+  padding: 90px 30px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/004/303/373/non_2x/gradient-islamic-pattern-background-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: auto;
+}
