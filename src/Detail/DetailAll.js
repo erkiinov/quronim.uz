@@ -28,10 +28,10 @@ const DetailAll = () => {
     axios
       .get(`https://api.alquran.cloud/v1/surah/${params.id}/${lang}`)
       .then((res) => {
-        if (res.data.code !== 200) {
-          setStyle({ display: "inline-block" });
-        } else {
+        if (res.data.code === 200) {
           setStyle({ display: "none" });
+        } else {
+          setStyle({ display: "inline-block" });
         }
         setApi2(res.data.data.ayahs);
       });
