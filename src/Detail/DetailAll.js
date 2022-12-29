@@ -6,7 +6,7 @@ import Detail from "../components/suraDetail/Detail";
 import "./detailAll.scss";
 
 const DetailAll = () => {
-  const [style, setStyle] = useState({ display: "none" });
+  const [style, setStyle] = useState({ display: "inline-block" });
 
   const [lang, setLang] = useState("uz.sodik");
   const [api1, setApi1] = useState({ ayahs: [] });
@@ -14,10 +14,10 @@ const DetailAll = () => {
     axios
       .get(`https://api.alquran.cloud/v1/surah/${params.id}/ar.alafasy`)
       .then((res) => {
-        if (res.data.code !== 200) {
-          setStyle({ display: "inline-block" });
-        } else {
+        if (res.data.code === 200) {
           setStyle({ display: "none" });
+        } else {
+          setStyle({ display: "inline-block" });
         }
         setApi1(res.data.data);
       });
