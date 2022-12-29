@@ -3,16 +3,26 @@ import axios from "axios";
 import Surah from "../components/surah/Surah";
 import "./Surah-all.scss";
 import { Link } from "react-router-dom";
+import Spinner from "../components/Spinner/spinner";
 
 const SurahAll = () => {
+  const [style, setStyle] = useState({ display: "inline-block" });
+
   const [api, setApi] = useState([]);
   useEffect(() => {
-    axios
-      .get("https://api.alquran.cloud/v1/surah")
-      .then((res) => setApi(res.data.data));
+    axios.get("https://api.alquran.cloud/v1/surah").then((res) => {
+      if (res.data.code === 200) {
+        setStyle({ display: "none" });
+      } else {
+        setStyle({ display: "inline-block" });
+      }
+      setApi(res.data.data);
+    });
   }, []);
+
   return (
     <div className="surahAll">
+      <Spinner style={style} />
       <Link className="Link" to={"/"}>
         <i className="fa-solid fa-arrow-left"></i>&nbsp;Back
       </Link>
