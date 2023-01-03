@@ -22,3 +22,9 @@ body {
   background-position: center;
   overflow-y: auto;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 50px 10px;
+  }
+}

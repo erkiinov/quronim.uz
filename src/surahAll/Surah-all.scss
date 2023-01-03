@@ -36,8 +36,8 @@
   .quran-title {
     position: absolute;
     top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
     font-size: 42px;
     span:first-child {
       color: green;
@@ -45,5 +45,46 @@
     span:last-child {
       color: red;
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  .surahAll {
+    padding-top: 70px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+    row-gap: 40px;
+    .quran-title {
+      top: 0;
+      right: 0;
+      transform: translate(0);
+      font-size: 34px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .surahAll {
+    grid-template-columns: repeat(2, 1fr);
+    .quran-title {
+      font-size: 28px;
+    }
+  }
+  .Link {
+    height: 35px !important;
+    width: 80px !important;
+    border-radius: 8px !important;
+    padding: 0px 0px !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    top: 0 !important;
+    font-size: 16px !important;
+    i {
+      font-size: 12px !important;
+    }
+  }
+}
+@media (max-width: 350px) {
+  .surahAll {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

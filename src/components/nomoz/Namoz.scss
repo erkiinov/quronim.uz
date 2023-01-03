@@ -52,6 +52,34 @@
       justify-content: space-between;
       span {
         font-weight: 500;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .namoz-uni {
+    height: 400px;
+    width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  .namoz-uni {
+    .title-namoz {
+      gap: 5px;
+      h1 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 14px;
+      }
+    }
+    ul {
+      li {
+        span {
+          font-size: 14px;
+        }
       }
     }
   }

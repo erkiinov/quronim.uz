@@ -52,3 +52,49 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .DetailAll {
+    .text-name {
+      h1 {
+        font-size: 36px;
+      }
+    }
+    #select {
+      height: 35px;
+      width: 80px;
+      font-size: 16px;
+      padding: 0 10px;
+      border-radius: 8px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .DetailAll {
+    padding-top: 60px;
+    gap: 30px;
+    .text-name {
+      h1 {
+        font-size: 34px;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .DetailAll {
+    .text-name {
+      h1 {
+        font-size: 28px;
+      }
+    }
+  }
+}
+@media (max-width: 300px) {
+  .DetailAll {
+    .text-name {
+      h1 {
+        font-size: 22px;
+      }
+    }
+  }
+}
