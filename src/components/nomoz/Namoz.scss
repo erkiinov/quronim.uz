@@ -1,0 +1,58 @@
+.namoz-uni {
+  color: #4e3603;
+  width: 400px;
+  height: 450px;
+  background-color: #fff;
+  border: 1px solid #564017;
+  padding: 20px 25px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  .title-namoz {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    padding-bottom: 10px;
+    border-bottom: 2.3px solid #564017;
+    h2 {
+      line-height: 1;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    h1 {
+      line-height: 1;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+  ul {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    hr {
+      width: 100%;
+      height: 0.5px;
+      border: none;
+      background-color: #564017;
+    }
+    li {
+      padding: 0 5px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+}

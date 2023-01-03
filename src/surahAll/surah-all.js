@@ -30,12 +30,12 @@ const SurahAll = () => {
         <span>Qur'an</span>&nbsp;
         <span>(القرآن)</span>
       </h1>
-      <Link to={"/"} className={"logo"}>
+      {/* <Link to={"/"} className={"logo"}>
         <img
           src="https://o.remove.bg/downloads/759916c7-cdb7-4f54-9749-032e62d9e1f4/187-1875960_al-quran-icon-png-transparent-png-removebg-preview.png"
           alt=""
         />
-      </Link>
+      </Link> */}
       {api.map(({ number, englishName }) => (
         <Surah key={number} id={number} name={englishName} />
       ))}

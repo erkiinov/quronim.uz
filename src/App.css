@@ -5,7 +5,7 @@
   list-style: none;
   color: inherit;
   box-sizing: border-box;
-  font-family: serif;
+  font-family: sans-serif;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  padding: 90px 30px;
+  padding: 50px 30px;
   height: 100vh;
   width: 100vw;
   background-image: url("https://static.vecteezy.com/system/resources/previews/004/303/373/non_2x/gradient-islamic-pattern-background-vector.jpg");
