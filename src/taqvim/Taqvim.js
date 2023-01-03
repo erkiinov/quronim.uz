@@ -15,7 +15,7 @@ const Taqvim = () => {
   useEffect(() => {
     axios
       .get(
-        " http://api.aladhan.com/v1/timingsByCity?city=Tashkent&country=Uzbekistan&method=2"
+        " https://api.aladhan.com/v1/timingsByCity?city=Tashkent&country=Uzbekistan&method=2"
       )
       .then((res) => {
         if (res.status === 200) {
