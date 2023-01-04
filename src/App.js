@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import DetailAll from "./Detail/DetailAll";
 import GoSurah from "./goSurah/goSurah";
 import Taqvim from "./taqvim/Taqvim";
+import Api from "./api";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path="/surah/:id" element={<DetailAll />} exact />
 
         <Route path="/taqvim/" element={<Taqvim />} exact />
+
+        <Route path="/admin" element={<Api />} />
       </Routes>
     </div>
   );

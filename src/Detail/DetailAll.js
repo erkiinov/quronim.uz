@@ -63,13 +63,14 @@ const DetailAll = () => {
       <select
         id="select"
         onChange={(e) => {
-          console.log(e.target.value);
           if (e.target.value === "Uz") {
             setLang("uz.sodik");
           } else if (e.target.value === "Ru") {
             setLang("ru.kuliev");
           } else if (e.target.value === "En") {
             setLang("en.asad");
+          } else if (e.target.value === "Es") {
+            setLang("es.asad");
           }
         }}
       >
@@ -81,6 +82,9 @@ const DetailAll = () => {
         </option>
         <option value="En" key="C">
           En
+        </option>
+        <option value="Es" key="D">
+          Es
         </option>
       </select>
     </div>
