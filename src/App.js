@@ -16,7 +16,7 @@ function App() {
 
         <Route path="/taqvim/" element={<Taqvim />} exact />
 
-        <Route path="/admin" element={<Api />} />
+        <Route path="/admin/:id" element={<Api />} />
       </Routes>
     </div>
   );
