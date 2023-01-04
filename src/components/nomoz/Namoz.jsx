@@ -49,32 +49,32 @@ const Namoz = ({ date, timing }) => {
       <ul>
         <li>
           <span>Bomdot</span>
-          <span>{timing.Fajr}</span>
+          <span>{timing.tong_saharlik}</span>
         </li>
         <hr />
         <li>
           <span>Quyosh chiqishi</span>
-          <span>{timing.Sunrise}</span>
+          <span>{timing.quyosh}</span>
         </li>
         <hr />
         <li>
           <span>Peshin</span>
-          <span>{timing.Dhuhr}</span>
+          <span>{timing.peshin}</span>
         </li>
         <hr />
         <li>
           <span>Asr</span>
-          <span>{timing.Asr}</span>
+          <span>{timing.asr}</span>
         </li>
         <hr />
         <li>
           <span>Shom</span>
-          <span>{timing.Maghrib}</span>
+          <span>{timing.shom_iftor}</span>
         </li>
         <hr />
         <li>
           <span>Xufton</span>
-          <span>{timing.Isha}</span>
+          <span>{timing.hufton}</span>
         </li>
       </ul>
     </div>

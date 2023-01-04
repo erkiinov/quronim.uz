@@ -12,6 +12,9 @@ const Taqvim = () => {
     timings: "",
     date: "",
   });
+  const [taqvim1, setTaqvim1] = useState({
+    times: "",
+  });
   useEffect(() => {
     axios
       .get(
@@ -26,12 +29,24 @@ const Taqvim = () => {
         }
       });
   }, []);
+  useEffect(() => {
+    axios
+      .get("https://islomapi.uz/api/present/day?region=Toshkent")
+      .then((res) => {
+        if (res.status === 200) {
+          setStyle({ display: "none" });
+          setTaqvim1(res.data);
+        } else {
+          setStyle({ display: "inline-block" });
+        }
+      });
+  }, []);
   return (
     <div className="taqvim">
       <Spinner style={style} />
       {style.display === "none" ? (
         <>
-          <Namoz timing={taqvim.timings} date={taqvim.date} />
+          <Namoz timing={taqvim1.times} date={taqvim.date} />
           <Link className="Link" to={"/"}>
             <i className="fa-solid fa-arrow-left"></i>&nbsp;Back
           </Link>
